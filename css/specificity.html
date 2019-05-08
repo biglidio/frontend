@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>CSS Specificity</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        p { /* 0001 */
+            color: red;
+        }
+        
+        article p { /* 0002 */
+            color: blue;
+        }
+
+        #artigo p { /* 0101 */
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p>Primeiro parágrafo</p>
+    <article id="artigo">
+        <h2>Cabeçalho do artigo</h2>
+        <p>Parágrafo do artigo para testar a especificidade</p>
+    </article>
+</body>
+</html>
